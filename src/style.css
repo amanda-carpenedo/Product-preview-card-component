@@ -1,0 +1,153 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    max-width: 1440px;
+}
+
+
+.container-principal {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    height: 350px;
+    width: 470px;
+    border-radius: 9px;
+
+}
+
+.container-principal .imagem {
+    height: 100%;
+    border-radius: 9px 0 0 9px;
+}
+
+.container-principal .imagem-mobile {
+    display: none;
+
+}
+
+
+.container-informacao {
+    padding: 25px;
+}
+
+
+.container-texto h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+    color: rgb(58, 57, 57);
+
+}
+
+.container-texto h1 {
+    font-family: "Fraunces", serif;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+
+}
+
+.container-texto p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    margin-bottom: 20px;
+    color: rgb(58, 57, 57);
+    font-weight: 500;
+
+
+}
+
+.container-preco {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.container-preco h2 {
+    font-family: "Fraunces", serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.container-preco h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: rgb(58, 57, 57);
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: hsl(158, 36%, 37%);
+    height: 35px;
+    width: 180px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.botao img {
+    height: 15px;
+
+}
+
+.botao:hover {
+    background-color: hsl(123, 18%, 27%);
+}
+
+
+
+
+@media (max-width:500px) {
+
+    .container-principal {
+        display: flex;
+        flex-direction: column;
+        height:90%;
+        width: 90%;
+                
+    }
+
+    .container-principal .imagem {
+        display: none;
+    }
+
+    .container-principal .imagem-mobile {
+        display: flex;
+        border-radius: 9px 9px 0 0;
+        height: 40%;
+    }
+
+  
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18%;
+    width: 100%;
+
+}
+
+.botao img {
+    height: 15px;
+
+}
+
+.botao:hover {
+    background-color: hsl(123, 18%, 27%);
+}
+
+}
